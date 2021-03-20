@@ -130,6 +130,7 @@ jobs:
         find -name "*.vmdk*" | xargs -i mv -f {} packages
         find -name "*rootfs.img*" | xargs -i mv -f {} packages
         rm -rf packages
+        
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:

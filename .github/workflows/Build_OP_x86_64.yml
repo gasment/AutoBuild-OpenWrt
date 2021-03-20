@@ -76,10 +76,8 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/kenzok8/openwrt-packages package/lean
-        git clone https://github.com/kenzok8/small package/lean
-        git clone https://github.com/tty228/luci-app-serverchan.git package/lean
-        git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean
+        git clone https://github.com/kenzok8/openwrt-packages package/lean/packages
+        git clone https://github.com/kenzok8/small package/lean/small
         
     - name: argon-theme
       working-directory: ./openwrt
